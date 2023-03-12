@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    background-color: #34373c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-height: 80px;
+}
+
+/* Estilos para el título del logo o marca */
+header h1 {
+    margin: 0;
+    padding: 0 16px;
+    float: left;
+    font-size: 34px;
+}
+
+/* Estilos para el conjunto de botones al centro */
+header nav {
+    text-align: center;
+}
+
+/* Estilo para input tipo 'text' */
+input[type=text] {
+    box-sizing: border-box; /* Incluye el borde y padding en el ancho total del input */
+    width: 30%;
+    float: right;
+    margin-right: 80px;
+    height: 48px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5; /* Color del borde */
+    border-radius: 24px; /* Borde redondeado */
+    background-color: #fff;
+    transition: all 0.2s ease-out; /* Efecto de transición cuando se enfoca con el mouse */
+  }
+  
+  /* Cambia el color del borde y del fondo cuando el input está enfocado */
+  input[type=text]:focus {
+    border-color: #4d90fe;
+    background-color: #fff;
+    outline: none; /* Quita el contorno predeterminado del navegador */
+    box-shadow: 0 0 0 0.1em rgba(38,132,255,.25); /* Agrega una sombra alrededor del input cuando está enfocado */
+  }

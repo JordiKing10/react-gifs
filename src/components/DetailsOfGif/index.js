@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
-import Gif from "./Gif";
-import getGif from '../services/getGif'
+import Gif from "../Gif";
+import getGif from '../../services/getSingleGif'
+import Spinner from "../Spinner";
 
 export default function DetailsOfGif({params}) {
     const { id } = params; // Obtiene la keyword del objeto props.params
@@ -20,8 +21,7 @@ export default function DetailsOfGif({params}) {
         })
     }, [id])
     
-    console.log(gif);
-    if (gif.loading) return <i>Cargando 🕑</i> // Si loading es true devuelve cargando
+    if (gif.loading) return <Spinner/> // Si loading es true devuelve cargando
 
     /*
       Devuelve el JSX necesarios para mostrar los resultados de búsqueda. Se hace uso de una librería react llamada 'Gif' para

@@ -2,9 +2,10 @@ import React from 'react'
 import { Route } from 'wouter'
 
 import './App.css'
-import ListOfGifs from './components/ListOFGifs'
+import SearchResult from './pages/SearchResult'
 import DetailsOfGif from './components/DetailsOfGif'
-import Header from './components/Header'
+import Header from './pages/Header/Header'
+import Home from './pages/Home'
 
 
 function App() {
@@ -14,14 +15,9 @@ function App() {
       <section className="App-content">
         <Header />
         <div className='Gif-content'>
-          <Route 
-            component={ListOfGifs}
-            path="/gifs/:keyword" 
-            />
-          <Route 
-            component={DetailsOfGif}
-            path="/gif/:id" 
-          />
+          <Route component={Home} path="/" />
+          <Route component={SearchResult} path="/search/:keyword" />
+          <Route component={DetailsOfGif} path="/gif/:id" />
         </div>
       </section>
     </div>

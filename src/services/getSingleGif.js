@@ -1,6 +1,6 @@
 const apiKey = 'MlZXprVjMlMjZkXtb7BPuDUUCYtW8kQj'
 
-export default function getGif({id} = []){
+export default function getSingleGif({id} = []){
     const apiUrl = `https://api.giphy.com/v1/gifs/${id}?api_key=${apiKey}`
 
     return fetch(apiUrl)
