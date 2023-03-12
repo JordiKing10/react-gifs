@@ -9,7 +9,6 @@ export default function getSingleGif({id} = []){
         const {data = []} = response
         const { id, title, source } = data;
         const { url } = data.images.downsized_medium
-        console.log(data)
         return { id, title, source, url };
         })
 }

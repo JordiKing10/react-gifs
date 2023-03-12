@@ -4,7 +4,7 @@ import { Route } from 'wouter'
 import './App.css'
 import SearchResult from './pages/SearchResult'
 import DetailsOfGif from './components/DetailsOfGif'
-import Header from './pages/Header/Header'
+import Header from './pages/Header'
 import Home from './pages/Home'
 
 

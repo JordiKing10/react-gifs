@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'wouter'
-import './Header.css'
+import './styles.css'
 
 
 
