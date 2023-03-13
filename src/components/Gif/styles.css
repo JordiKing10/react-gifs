@@ -2,8 +2,8 @@
     border: 1px solid #eee;
     border-radius: 6px;
     display: flex;
-    width: calc(50% - 16px);
-    margin-bottom: 16px;
+    /* width: calc(50% - 16px); */
+    margin: 8px;
     flex-direction: column;
     padding: 32px;
     color: white;

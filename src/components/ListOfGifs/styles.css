@@ -1,8 +1,6 @@
 .ListOfGifs {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: space-around;
 }
   
